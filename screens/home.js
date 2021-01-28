@@ -17,20 +17,34 @@ import ReviewForm from "../shared/reviewForm";
 export default function Home({ navigation }) {
   const [modal, setModal] = useState(false);
   const [reviews, setReviews] = useState([
-    { name: "S.H Figuarts Trunks", rating: 5, body: "lorem ipsum", key: "1" },
+    {
+      name: "S.H Figuarts Trunks",
+      rating: 5,
+      body: "lorem ipsum",
+      key: "1",
+      image: require("../assets/trunks1.jpg"),
+    },
     {
       name: "Banpresto Broly year 93",
       rating: 4,
       body: "lorem ipsum",
       key: "2",
+      image: require("../assets/broly.jpg"),
     },
     {
       name: "Banpresto Match Makers Freezer",
       rating: 3,
       body: "lorem ipsum",
       key: "3",
+      image: require("../assets/freezer.jpg"),
     },
-    { name: "Mirio Age of Heroes", rating: 5, body: "lorem ipsum", key: "4" },
+    {
+      name: "Mirio Age of Heroes",
+      rating: 5,
+      body: "lorem ipsum",
+      key: "4",
+      image: require("../assets/mirio.jpg"),
+    },
   ]);
 
   const addFigure = (newFigure) => {
